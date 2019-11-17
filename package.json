@@ -1,0 +1,59 @@
+{
+  "name": "vue-router-state-sync",
+  "version": "0.0.1",
+  "description": "Coerce props to custom values",
+  "main": "dist/vue-router-state-sync.cjs.js",
+  "module": "dist/vue-router-state-sync.es.js",
+  "unpkg": "dist/vue-router-state-sync.js",
+  "browser": "dist/vue-router-state-sync.es.js",
+  "author": {
+    "name": "Damon Muma",
+    "email": "damuma@gmail.com"
+  },
+  "scripts": {
+    "lint": "eslint --color --ext=js,html src test",
+    "unit": "jest",
+    "dev": "yarn unit -- --watchAll",
+    "test": "yarn lint && yarn unit",
+    "prepublishOnly": "rollit"
+  },
+  "files": [
+    "src",
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "vue",
+    "router",
+    "state",
+    "sync",
+    "map",
+    "helper"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@vue/test-utils": "^1.0.0-beta.26",
+    "babel-jest": "^24.8.0",
+    "codecov": "^3.5.0",
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedamon/vue-router-state-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thedamon/vue-router-state-sync/issues"
+  },
+  "homepage": "https://github.com/thedamon/vue-router-state-sync#readme",
+  "peerDependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3"
+  }
+}
